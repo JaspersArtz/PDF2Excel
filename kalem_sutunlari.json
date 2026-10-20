@@ -1,0 +1,14 @@
+{
+  "sutunlar": [
+    "Sıra No",
+    "Mal Hizmet Açıklaması",
+    "Miktar",
+    "Birim",
+    "Birim Fiyat",
+    "KDV",
+    "KDV Tutarı",
+    "Toplam",
+    "Genel Toplam",
+    "Fatura No"
+  ]
+}

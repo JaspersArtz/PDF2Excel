@@ -1,0 +1,14 @@
+# PDF okuma ve Excel işlemleri
+pdfplumber>=0.10.0
+openpyxl>=3.1.0
+
+# LLM API entegrasyonu (yeni)
+anthropic>=0.39.0
+google-generativeai>=0.8.0
+python-dotenv>=1.0.0
+
+# OCR desteği (sadece taranmış PDF'lerle çalışacaksanız gerekli)
+# Ayrıca Tesseract-OCR ve Poppler binary'lerini de kurmanız gerekir.
+pytesseract>=0.3.10
+pdf2image>=1.17.0
+Pillow>=10.0.0
