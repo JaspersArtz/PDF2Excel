@@ -25,5 +25,8 @@ Python 3.10+ gerekli. [python.org](https://www.python.org/downloads/)
 
 > Bu paylaşım maliyeti %70 düşürür ve hızı 2-3 kat artırır.
 
+<img width="957" height="748" alt="image" src="https://github.com/user-attachments/assets/76b01abb-6b6b-45e8-a42d-1dd2b15625b6" />
+<img width="959" height="746" alt="image" src="https://github.com/user-attachments/assets/0e902ee0-c14f-4668-a6b3-9c78e86d225e" />
+
 
 
