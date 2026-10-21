@@ -1,29 +1,32 @@
 
+# Invoice & Tender Data Extraction System
+
+A hybrid document processing setup combining **Regex** for structured fields and **LLMs** for unstructured text extraction.
+
 ### 1. Python
-Python 3.10+ gerekli. [python.org](https://www.python.org/downloads/)
+Python 3.10+ required. [python.org](https://www.python.org/downloads/)
 
-### 2. Kütüphaneler
+### 2. Libraries
+```bash
+pip install -r requirements.txt
+py -m pip install pdfplumber openpyxl anthropic google-generativeai python-dotenv pytesseract pdf2image Pillow
 ```
-> pip install -r requirements.txt
-> py -m pip install pdfplumber openpyxl anthropic google-generativeai python-dotenv pytesseract pdf2image Pillow
 
-```
+### Which fields use regex, which fields use LLM?
 
-### Hangi alanlar regex, hangi alanlar LLM?
+**Regex in invoice (strict format, 100% accurate):**
+- Tax ID (VKN), IBAN, invoice number, dates, amounts
 
-**Faturada regex (net format, %100 doğru):**
-- VKN, IBAN, fatura no, tarihler, tutarlar
+**LLM in invoice (free text, regex insufficient):**
+- Seller company name, buyer/authority, tender subject, payment method
 
-**Faturada LLM (serbest metin, regex yetersiz):**
-- Satıcı firma adı, alıcı/idare, ihale konusu, ödeme şekli
+**Regex in tender notice:**
+- Tender Registration No, dates, estimated cost
 
-**İhale ilanında regex:**
-- İhale Kayıt No, tarihler, yaklaşık maliyet
+**LLM in tender notice:**
+- Authority name, tender subject, tender venue, tender procedure, contact info
 
-**İhale ilanında LLM:**
-- İdare adı, ihale konusu, ihale yeri, ihale usulü, iletişim
-
-> Bu paylaşım maliyeti %70 düşürür ve hızı 2-3 kat artırır.
+> This split reduces cost by 70% and increases speed by 2-3x.
 
 
 
